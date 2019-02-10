@@ -1,9 +1,11 @@
 eras=function(data){
   prvocisla=0
   for (i in 1:length(data)){
-    for (j in 0:length(data)/data[i]){
-      prvocisla=c(prvocisla, data[i])
+    for (j in 0:length(data)){
+      if (data[i]!=0){
+      prvocisla[i]=data[i]
           data[i+j*data[i]]=0
+      }
     }
   }
   prvocisla
