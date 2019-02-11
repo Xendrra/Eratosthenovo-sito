@@ -1,8 +1,10 @@
+
 eras=function(data){
+  bubble_sort(data)
   prvocisla=0
   k=1
   for (i in 1:length(data)){
-    if (data[i]>1){
+    if (data[i]!=0){
       prvocisla[k]=data[i]
       k=k+1
       for (j in 0:length(data)){
@@ -13,4 +15,5 @@ eras=function(data){
     }
   }
   prvocisla
+  write.csv2("")
 }
